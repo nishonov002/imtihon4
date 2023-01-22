@@ -1,0 +1,117 @@
+header {
+  width: 1270px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .searchDiv {
+    padding: 10px 30px;
+    border-bottom: 1px solid rgb(228, 230, 234);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    form {
+      width: 50%;
+      border-radius: 30px;
+      background-color: rgb(245, 247, 250);
+      display: flex;
+      align-items: center;
+      position: relative;
+      .search {
+        position: absolute;
+        left: 16px;
+        color: rgba(0, 0, 0, 0.24);
+      }
+      &:hover {
+        background-color: rgb(222, 224, 227);
+        transform: scale(1.01);
+        color: white;
+        .search {
+          color: rgb(65, 64, 64);
+        }
+      }
+      &:active{
+       border-radius: 30px;
+         background-color: rgb(222, 224, 227);
+        transform: scale(1.01);
+        color: white;
+        .search {
+          color: rgb(65, 64, 64);
+        }
+      }
+      #text {
+        padding: 17px 48px;
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        color: black;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+      
+      }
+    }
+    .logout {
+      padding: 10px 23px 11px;
+      background: #0d75ff;
+      border-radius: 4px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        background-color: rgb(10, 88, 190);
+        transform: scale(1.04);
+      }
+    }
+  }
+  .showing {
+    height: 56px;
+    padding-right: 30px;
+    padding-left: 30%;
+    border-bottom: 1px solid rgb(228, 230, 234);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      color: #222531;
+    }
+    h3 {
+      background: #a6b0c3;
+      border-radius: 4px;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+      padding: 9px 16px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+      &:hover {
+        background-color: rgb(141, 138, 138);
+        transform: scale(1.04);
+      }
+    }
+  }
+}

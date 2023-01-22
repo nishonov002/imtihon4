@@ -1,0 +1,105 @@
+body {
+  background-image: url(../../img/imgim4.jpg);  
+  }
+.login {
+  position: relative;
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  img {
+    background-color: transparent;
+  }
+  p {
+    position: absolute;
+    top: 90%;
+    font-size: 20px;
+    font-weight: 300;
+    left: 50%;
+    a {
+      color: white;
+    }
+  }
+  .input {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    padding: 0 10px;
+    width: 280px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+    #error {
+      position: absolute;
+      top: 28%;
+      font-weight: bolder;
+      left: 30%;
+      color: red;
+    }
+    input {
+      padding: 12px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+     
+    }
+    #err {
+      color: white;
+    }
+  }
+  .input1 {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    padding: 0 10px;
+    width: 280px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+
+    #error2 {
+      position: absolute;
+      font-weight: bolder;
+      left: 30%;
+      top: 28%;
+      color: red;
+    }
+    input {
+      padding: 12px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+    }
+    #err {
+      color: white;
+    }
+    #err1 {
+      color: white;
+    }
+  }
+  .textDiv {
+    border: 1.5px solid red;
+    #err {
+      color: red;
+    }
+  }
+  .btn {
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    width: 300px;
+    color: rgb(101, 101, 239);
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: #fff;
+  }
+}

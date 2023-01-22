@@ -1,0 +1,273 @@
+main {
+  margin: 0 auto;
+  width: 1270px;
+  display: flex;
+  .basket {
+    padding: 30px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2 {
+      margin: 0;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #000000;
+    }
+    p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 155.6%;
+      /* or 22px */
+
+      color: #000000;
+    }
+    .basketItem {
+      background: #f8fafd;
+      margin: 15px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 10px;
+      .name {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h3 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+
+          color: #000000;
+          margin: 0;
+        }
+        h4 {
+          font-family: "Noto Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px;
+          /* identical to box height */
+
+          color: #757881;
+          margin: 0;
+        }
+      }
+      .basketLink {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .read {
+          a {
+            font-size: 24px;
+            color: rgb(165, 161, 161);
+          }
+          &:hover {
+            transform: scale(1.1);
+            a {
+              color: rgb(81, 74, 74);
+            }
+          }
+        }
+        .delate {
+          outline: none;
+          border: none;
+          background: transparent;
+          a {
+            font-size: 24px;
+            color: rgb(216, 66, 66);
+          }
+          &:hover {
+            transform: scale(1.1);
+            a {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .filter {
+    background-color: rgb(245, 247, 250);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    .grandTransfer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 40px;
+      button {
+        width: 32px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid #dfe3e8;
+        border-radius: 4px;
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        text-align: center;
+
+        /* Dark Grey / 400 */
+
+        color: #212b36;
+        &:hover {
+          transform: scale(1.03);
+          color: #0d75ff;
+          border: 1px solid #0d75ff;
+        }
+      }
+      .transfer {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        button {
+          width: 32px;
+          height: 32px;
+          background: #ffffff;
+          border: 1px solid #dfe3e8;
+          border-radius: 4px;
+          font-family: "SF Pro Text";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          /* or 143% */
+
+          text-align: center;
+
+          /* Dark Grey / 400 */
+
+          color: #212b36;
+          &:hover {
+            transform: scale(1.03);
+            color: #0d75ff;
+            border: 1px solid #0d75ff;
+          }
+        }
+      }
+    }
+
+    .products {
+      padding: 39px;
+      width: 100%;
+      background-color: rgb(245, 247, 250);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 33px;
+      .productItem {
+        padding: 18px 15px 13px 21px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+          transform: scale(1.02);
+        }
+        img {
+          max-width: 100%;
+          max-height: 60%;
+          padding: 18px 28px 18px 20px;
+          background-color: rgb(245, 247, 250);
+        }
+        h2 {
+          margin: 0;
+          margin-top: 19px;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          color: #000000;
+        }
+        h3 {
+          margin: 2px;
+          font-family: "Noto Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px;
+          /* identical to box height */
+
+          color: #757881;
+        }
+        h4 {
+          font-family: "Noto Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px;
+          margin-bottom: 5px;
+          color: #757881;
+        }
+        .proItemLink {
+          margin: 5px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .toBasket {
+            padding: 10px 25px;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            background: #ffd80d;
+            border-radius: 4px;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+          .toInfo {
+            padding: 10px 25px;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #0d75ff;
+            background-color: rgba(13, 117, 255, 0.05);
+            border-radius: 4px;
+            &:hover {
+              transform: scale(1.05);
+              background-color: rgb(140, 140, 202);
+              color: white;
+            }
+          }
+        }
+        .toRead {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          background: #75828a;
+          border-radius: 4px;
+          color: #ffffff;
+          padding: 10px 106px;
+          &:hover {
+            background: #4a4f53;
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
